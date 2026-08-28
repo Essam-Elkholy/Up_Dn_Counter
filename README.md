@@ -92,23 +92,3 @@ run -all
 ## Linting
 
 The design was checked with **Synopsys SpyGlass** (`Lint.prj`, `rtl_handoff` methodology) as part of the RTL sign-off flow.
-
-## Repository Structure
-
-```
-.
-├── Up_Dn_Counter.v          # RTL design
-├── Up_Dn_Counter_tb.v       # Testbench
-├── wave.do                  # ModelSim/QuestaSim waveform config
-├── Lint.prj                 # SpyGlass lint project file
-├── Transcript               # Simulation log (raw text)
-├── Transcript.png           # Simulation log (screenshot)
-├── CounterBlock.png         # Block symbol
-├── RTL_Schematic.png        # Synthesized RTL schematic
-├── Design_Vision.png        # Design Vision schematic view
-└── Wave.png                 # Simulation waveform
-```
-
-## License
-
-Add a license of your choice (e.g., MIT) here.
