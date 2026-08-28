@@ -1,0 +1,42 @@
+# Loading project Up_Dn_Counter
+# Loading project Up_Dn_Counter
+# Compile of Up_Dn_Counter_tb.v was successful.
+# Compile of Up_Dn_Counter.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.Up_Dn_Counter_tb
+# vsim -gui work.Up_Dn_Counter_tb 
+# Start time: 23:44:44 on Aug 28,2026
+# Loading work.Up_Dn_Counter_tb
+# Loading work.Up_Dn_Counter
+add wave *
+run -all
+# Time: 0 | IN: 00000 | Load: 0 | Up: 0 | Down: 0 | Counter: xxxxx | High: x | Low: x
+# Time: 10000 | IN: 00101 | Load: 1 | Up: 0 | Down: 0 | Counter: xxxxx | High: x | Low: x
+# Time: 15000 | IN: 00101 | Load: 1 | Up: 0 | Down: 0 | Counter: 00101 | High: 0 | Low: 0
+# Time: 20000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00101 | High: 0 | Low: 0
+# Time: 25000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00100 | High: 0 | Low: 0
+# Time: 35000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00011 | High: 0 | Low: 0
+# Time: 45000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00010 | High: 0 | Low: 0
+# Time: 55000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00001 | High: 0 | Low: 0
+# Time: 65000 | IN: 00101 | Load: 0 | Up: 0 | Down: 1 | Counter: 00000 | High: 0 | Low: 1
+# Time: 100000 | IN: 00101 | Load: 0 | Up: 0 | Down: 0 | Counter: 00000 | High: 0 | Low: 1
+# Time: 110000 | IN: 11100 | Load: 1 | Up: 0 | Down: 0 | Counter: 00000 | High: 0 | Low: 1
+# Time: 115000 | IN: 11100 | Load: 1 | Up: 0 | Down: 0 | Counter: 11100 | High: 0 | Low: 0
+# Time: 120000 | IN: 11100 | Load: 0 | Up: 1 | Down: 0 | Counter: 11100 | High: 0 | Low: 0
+# Time: 125000 | IN: 11100 | Load: 0 | Up: 1 | Down: 0 | Counter: 11101 | High: 0 | Low: 0
+# Time: 135000 | IN: 11100 | Load: 0 | Up: 1 | Down: 0 | Counter: 11110 | High: 0 | Low: 0
+# Time: 145000 | IN: 11100 | Load: 0 | Up: 1 | Down: 0 | Counter: 11111 | High: 1 | Low: 0
+# Time: 180000 | IN: 11100 | Load: 0 | Up: 0 | Down: 0 | Counter: 11111 | High: 1 | Low: 0
+# Time: 190000 | IN: 01111 | Load: 1 | Up: 0 | Down: 0 | Counter: 11111 | High: 1 | Low: 0
+# Time: 195000 | IN: 01111 | Load: 1 | Up: 0 | Down: 0 | Counter: 01111 | High: 0 | Low: 0
+# Time: 200000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01111 | High: 0 | Low: 0
+# Time: 205000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01110 | High: 0 | Low: 0
+# Time: 215000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01101 | High: 0 | Low: 0
+# Time: 225000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01100 | High: 0 | Low: 0
+# Time: 235000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01011 | High: 0 | Low: 0
+# Time: 245000 | IN: 01111 | Load: 0 | Up: 1 | Down: 1 | Counter: 01010 | High: 0 | Low: 0
+# Time: 250000 | IN: 10100 | Load: 1 | Up: 1 | Down: 1 | Counter: 01010 | High: 0 | Low: 0
+# Time: 255000 | IN: 10100 | Load: 1 | Up: 1 | Down: 1 | Counter: 10100 | High: 0 | Low: 0
+# Time: 270000 | IN: 10100 | Load: 0 | Up: 0 | Down: 0 | Counter: 10100 | High: 0 | Low: 0
+# ** Note: $stop    : C:/Users/essam/Downloads/Digital IC Diploma/Labs/Up_Dn_Counter_tb.v(100)
+#    Time: 290 ns  Iteration: 0  Instance: /Up_Dn_Counter_tb
