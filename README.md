@@ -15,7 +15,7 @@ A parameterizable-style, synchronous 5-bit up/down counter written in Verilog, w
 
 ## Block Diagram
 
-![Up_Dn_Counter block symbol](CounterBlock.png)
+![Up_Dn_Counter block symbol](images/CounterBlock.png)
 
 ## Port List
 
@@ -32,11 +32,7 @@ A parameterizable-style, synchronous 5-bit up/down counter written in Verilog, w
 
 ## RTL Schematic
 
-![RTL schematic](RTL_Schematic.png)
-
-## Design Vision
-
-![Design Vision view](Design_Vision.png)
+![RTL schematic](images/RTL_Schematic.png)
 
 ## Design Behavior
 
@@ -64,7 +60,7 @@ A free-running clock (10 ns period) is generated in the testbench, and a `$monit
 
 ### Waveform
 
-![Simulation waveform](Wave.png)
+![Simulation waveform](images/Wave.png)
 
 ### Sample Transcript Output
 
@@ -80,6 +76,7 @@ All four test cases pass, confirming saturation behavior and the `Load > Down > 
 ## Running the Simulation (ModelSim / QuestaSim)
 
 ```tcl
+cd RTL
 vlib work
 vlog Up_Dn_Counter.v Up_Dn_Counter_tb.v
 vsim -gui work.Up_Dn_Counter_tb
@@ -91,4 +88,23 @@ run -all
 
 ## Linting
 
-The design was checked with **Synopsys SpyGlass** (`Lint.prj`, `rtl_handoff` methodology) as part of the RTL sign-off flow.
+The design was checked with **Synopsys SpyGlass** (`Lint/Lint.prj`, `rtl_handoff` methodology) as part of the RTL sign-off flow.
+
+## Repository Structure
+
+```
+.
+├── RTL/
+│   ├── Up_Dn_Counter.v      # RTL design
+│   ├── Up_Dn_Counter_tb.v   # Testbench
+│   ├── wave.do              # ModelSim/QuestaSim waveform config
+│   └── Transcript           # Simulation log
+├── Lint/
+│   └── Lint.prj             # SpyGlass lint project file
+├── images/
+│   ├── CounterBlock.png     # Block symbol
+│   ├── RTL_Schematic.png    # Synthesized RTL schematic
+│   └── Wave.png             # Simulation waveform
+├── LICENSE
+└── README.md
+```
